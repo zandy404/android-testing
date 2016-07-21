@@ -81,19 +81,19 @@ public class AppNavigationTest {
 
     @Test
     public void clickOnAndroidHomeIcon_OpensNavigation() {
-        fail("Implement step 9");
+        //fail("Implement step 9");
 //        // Check that left drawer is closed at startup
-//        onView(withId(R.id.drawer_layout))
-//                .check(matches(isClosed(Gravity.LEFT))); // Left Drawer should be closed.
+        onView(withId(R.id.drawer_layout))
+                .check(matches(isClosed(Gravity.LEFT))); // Left Drawer should be closed.
 //
 //        // Open Drawer
 //        String navigateUpDesc = mActivityTestRule.getActivity()
 //                .getString(android.support.v7.appcompat.R.string.abc_action_bar_up_description);
-//        onView(withContentDescription(navigateUpDesc)).perform(click());
+        onView(withContentDescription("Navigate up")).perform(click());
 //
 //        // Check if drawer is open
-//        onView(withId(R.id.drawer_layout))
-//                .check(matches(isOpen(Gravity.LEFT))); // Left drawer is open open.
+        onView(withId(R.id.drawer_layout))
+                .check(matches(isOpen(Gravity.LEFT))); // Left drawer is open open.
     }
 
 }
