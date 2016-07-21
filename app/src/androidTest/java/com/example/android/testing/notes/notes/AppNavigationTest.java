@@ -63,20 +63,20 @@ public class AppNavigationTest {
 
     @Test
     public void clickOnStatisticsNavigationItem_ShowsStatisticsScreen() {
-        fail("Implement step 9");
+       // fail("Implement step 9");
 //        // Open Drawer to click on navigation.
-//        onView(withId(R.id.drawer_layout))
-//                .check(matches(isClosed(Gravity.LEFT))) // Left Drawer should be closed.
-//                .perform(open()); // Open Drawer
+        onView(withId(R.id.drawer_layout))
+                .check(matches(isClosed(Gravity.LEFT))) // Left Drawer should be closed.
+                .perform(open()); // Open Drawer
 //
 //        // Start statistics screen.
-//        onView(withId(R.id.nav_view))
-//                .perform(navigateTo(R.id.statistics_navigation_menu_item));
+        onView(withId(R.id.nav_view))
+                .perform(navigateTo(R.id.statistics_navigation_menu_item));
 //
 //        // Check that statistics Activity was opened.
-//        String expectedNoStatisticsText = InstrumentationRegistry.getTargetContext()
-//                .getString(R.string.no_statistics_available);
-//        onView(withId(R.id.no_statistics)).check(matches(withText(expectedNoStatisticsText)));
+        String expectedNoStatisticsText = InstrumentationRegistry.getTargetContext()
+                .getString(R.string.no_statistics_available);
+        onView(withId(R.id.no_statistics)).check(matches(withText(expectedNoStatisticsText)));
     }
 
     @Test
